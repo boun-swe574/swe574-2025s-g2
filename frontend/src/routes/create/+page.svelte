@@ -161,7 +161,7 @@
             }));
     
             // Create post first
-            const response = await fetch(`${PUBLIC_API_URL}/api/posts/create`, {
+            const response = await fetch(`https://backend-310608491068.europe-west1.run.app//api/posts/create`, {
                 method: 'POST',
                 body: formData,
                 credentials: 'include'
@@ -179,7 +179,7 @@
                 const imageFormData = new FormData();
                 imageFormData.append('image', imageFile);
                 
-                const imageResponse = await fetch(`${PUBLIC_API_URL}/api/mysteryObjects/${responseData.mysteryObjectId}/upload-image`, {
+                const imageResponse = await fetch(`https://backend-310608491068.europe-west1.run.app//api/mysteryObjects/${responseData.mysteryObjectId}/upload-image`, {
                     method: 'POST',
                     body: imageFormData,
                     credentials: 'include'

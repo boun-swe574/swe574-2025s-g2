@@ -121,7 +121,7 @@
         parentCommentId: commentId
       };
       
-      const response = await fetch(`${PUBLIC_API_URL}/api/comments/create`, {
+      const response = await fetch(`https://backend-310608491068.europe-west1.run.app//api/comments/create`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -161,7 +161,7 @@
         return;
       }
       
-      const response = await fetch(`${PUBLIC_API_URL}/api/comments/${isUpvote ? 'upvote' : 'downvote'}/${commentId}`, {
+      const response = await fetch(`https://backend-310608491068.europe-west1.run.app//api/comments/${isUpvote ? 'upvote' : 'downvote'}/${commentId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -226,7 +226,7 @@
       }
 
       /* console.log('Request details:', {
-        url: `${PUBLIC_API_URL}/api/posts/${threadId}/markBestAnswer/${commentId}`,
+        url: `https://backend-310608491068.europe-west1.run.app//api/posts/${threadId}/markBestAnswer/${commentId}`,
         token: token.substring(0, 10) + '...',
         headers: {
           'Content-Type': 'application/json',
@@ -234,7 +234,7 @@
         }
       }); */
 
-      const response = await fetch(`${PUBLIC_API_URL}/api/posts/${threadId}/markBestAnswer/${commentId}`, {
+      const response = await fetch(`https://backend-310608491068.europe-west1.run.app//api/posts/${threadId}/markBestAnswer/${commentId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

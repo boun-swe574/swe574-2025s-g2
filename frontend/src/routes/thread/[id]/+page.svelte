@@ -58,7 +58,7 @@
       // console.log("Thread ID from data:", data.id);
       
       // Fetch post details
-      const response = await fetch(`${PUBLIC_API_URL}/api/posts/getForPostDetails/${data.id}`);
+      const response = await fetch(`https://backend-310608491068.europe-west1.run.app//api/posts/getForPostDetails/${data.id}`);
       if (!response.ok) throw new Error('Failed to fetch post details');
       const postData = await response.json();
       // console.log("Post data received:", postData);

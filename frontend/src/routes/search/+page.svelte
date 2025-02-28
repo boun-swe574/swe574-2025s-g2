@@ -24,7 +24,7 @@
             
             try {
                 // Use the new backend endpoint
-                const response = await fetch(`${PUBLIC_API_URL}/api/posts/searchForPosts?q=${encodeURIComponent(searchQuery.trim())}`);
+                const response = await fetch(`https://backend-310608491068.europe-west1.run.app//api/posts/searchForPosts?q=${encodeURIComponent(searchQuery.trim())}`);
                 
                 if (!response.ok) {
                     throw new Error('Search request failed');
